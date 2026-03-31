@@ -61,7 +61,7 @@ export default function StoryTest() {
       {/* The Problem */}
       <section className="st-section">
         <div className="asm-container">
-          <div className="st-section-grid fade-in">
+          <div className="st-section-grid fade-in st-stagger-1">
             <div>
               <h2>The Problem</h2>
               <p>Most founders think their story is clear. Most audiences disagree. You've spent months refining your pitch, your brand, your message — and you believe it's landing. But belief isn't data.</p>
@@ -80,7 +80,7 @@ export default function StoryTest() {
       {/* The Clarity Report */}
       <section className="st-section section-bg-lighter">
         <div className="asm-container" style={{ position: "relative", zIndex: 1 }}>
-          <div className="st-section-grid reverse fade-in">
+          <div className="st-section-grid reverse fade-in st-stagger-2">
             <div>
               <h2>The Clarity Report</h2>
               <p>The Story Test produces a Clarity Report — a detailed breakdown of how your story performs across different audience segments. Using AI-powered audience simulation, we test your pitch, your brand narrative, or your campaign message against realistic audience archetypes.</p>
@@ -99,12 +99,12 @@ export default function StoryTest() {
       {/* Who This Is For */}
       <section className="st-section">
         <div className="asm-container">
-          <div className="fade-in">
+          <div className="fade-in st-stagger-3">
             <h2 style={{ marginBottom: "0.5rem" }}>Who This Is For</h2>
             <p style={{ color: "var(--text-muted)", fontStyle: "italic", marginBottom: "1rem" }}>The Story Test is built for anyone who needs to know — before they launch — whether their message actually lands.</p>
             <img src={`${CDN}/story-test-who-for_ac9e317d.webp`} alt="Illustrated figures representing different audience types" style={{ maxWidth: "100%", marginBottom: "1.5rem", borderRadius: "4px" }} />
           </div>
-          <div className="who-cards fade-in">
+          <div className="who-cards fade-in st-stagger-4">
             <div className="who-card">
               <div className="who-num">01</div>
               <h4>THE PITCHER</h4>
@@ -130,7 +130,7 @@ export default function StoryTest() {
       {/* What Happens Next */}
       <section className="st-section section-bg-lighter">
         <div className="asm-container" style={{ position: "relative", zIndex: 1 }}>
-          <div className="st-section-grid fade-in">
+          <div className="st-section-grid fade-in st-stagger-3">
             <div>
               <h2>What Happens Next</h2>
               <p>After the Clarity Report is delivered, you'll have a clear map of your story's strengths and blind spots. From there, you can refine your pitch, adjust your messaging, or commission a full Story Forge engagement to rebuild the narrative from the ground up.</p>
@@ -146,7 +146,7 @@ export default function StoryTest() {
       {/* CTA */}
       <section className="st-section">
         <div className="asm-container">
-          <div className="cta-box fade-in">
+          <div className="cta-box fade-in st-stagger-5">
             <h2>Ready to Test Your Story?</h2>
             <p>Book a free discovery call. No pitch, no pressure — just a conversation about whether The Story Test is right for what you're building.</p>
             <a href="https://calendly.com/sindbad-adventurestorytellingmedia/new-meeting" target="_blank" rel="noopener noreferrer" className="btn btn-primary">

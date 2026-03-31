@@ -100,7 +100,9 @@ export default function Home() {
                 <img src={`${CDN}/smithy-scene_8d9f9aa6.png`} alt="2D illustrated smithy scene — faceless figure forging at an anvil with hammer, teal and charcoal palette" />
                 <div className="smithy-label">FORGING STORIES</div>
               </div>
-              <img src={`${CDN}/sindbad-photo_dbfa7430.webp`} alt="Sindbad Horizon — StorySmith and founder of Adventure Storytelling Media" className="sindbad-photo" />
+              <div className="sindbad-photo-wrapper">
+                <img src={`${CDN}/sindbad-photo_dbfa7430.webp`} alt="Sindbad Horizon — StorySmith and founder of Adventure Storytelling Media" className="sindbad-photo" />
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +149,7 @@ export default function Home() {
               <p>Every Wednesday, founders step into a room of investors, operators, and advisors and try to explain why their company matters. I've been embedded in that room for nearly three years. What I've learned is that the camera is the least interesting part — the real story is whether the audience actually heard what the founder thought they said. Sometimes they did. Often they didn't. That gap is everything.</p>
               <div className="testimonial">
                 <p>"When we created the website for PitchBoulder, we needed a video to capture the spirit of our meetings and the energy in the room. I hired Sindbad Horizon to create a piece that would address these requirements. Did he ever! The video is sensational, and I could not be more pleased."</p>
-                <div className="testimonial-author">Peter Adams <span>— PitchBoulder Founder</span></div>
+                <div className="testimonial-author">Peter Rothschild <span>— Founder</span></div>
               </div>
             </div>
             <div className="portfolio-video">
