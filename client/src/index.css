@@ -86,7 +86,7 @@
   --bg: #1a1e26;
   --bg-light: #232830;
   --bg-card: #1e222b;
-  --bg-section: #1e1e2e;
+  --bg-section: #1a1e26;
   --text: #e0e0e0;
   --text-muted: rgba(224,224,224,0.6);
   --text-dim: rgba(224,224,224,0.4);
@@ -192,6 +192,14 @@
   left: 50px;
   width: 60px;
   height: 100%;
+}
+.river-line-wrapper svg path {
+  stroke-dasharray: 12 8;
+  animation: riverFlow 3s linear infinite;
+}
+@keyframes riverFlow {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -40; }
 }
 
 /* ===== NAVIGATION ===== */
@@ -401,10 +409,10 @@
   align-items: center;
 }
 .hero-visual img {
-  max-width: 320px;
+  max-width: 360px;
   width: 100%;
-  opacity: 0.15;
-  filter: drop-shadow(0 0 40px rgba(56,248,236,0.15));
+  opacity: 0.35;
+  filter: brightness(1.3) drop-shadow(0 0 50px rgba(56,248,236,0.25));
 }
 .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -444,6 +452,19 @@
 .btn-outline:hover {
   background: rgba(56,248,236,0.1);
   box-shadow: 0 0 20px rgba(56,248,236,0.15);
+  transform: translateY(-2px);
+}
+.btn-solid-turquoise {
+  background: var(--turquoise);
+  color: var(--bg);
+  border: none;
+  box-shadow: 0 0 20px rgba(56,248,236,0.2);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.btn-solid-turquoise:hover {
+  background: var(--turquoise-light);
+  box-shadow: 0 0 30px rgba(56,248,236,0.35);
   transform: translateY(-2px);
 }
 .btn-link {
@@ -497,20 +518,20 @@
 
 /* ===== SECTION BACKGROUNDS ===== */
 .section-bg-lighter {
-  background: var(--bg-section);
+  background: rgba(26,30,38,0.95);
   position: relative;
 }
 .section-bg-lighter::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(30,30,46,0.6), transparent, transparent);
+  background: linear-gradient(to top, rgba(26,30,38,0.4), transparent, transparent);
   pointer-events: none;
 }
 .section-field-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(30,30,46,0.6), transparent, transparent);
+  background: linear-gradient(to top, rgba(26,30,38,0.4), transparent, transparent);
   pointer-events: none;
   z-index: 0;
 }
@@ -530,7 +551,7 @@
 .smithy-container {
   background: rgba(56,248,236,0.08);
   border-radius: 999px;
-  padding: 2.5rem 2rem 1.5rem;
+  padding: 2rem 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,9 +562,10 @@
 }
 /* FIX #2 — smithy illustration glow */
 .smithy-container img {
-  opacity: 0.9;
+  opacity: 1;
   filter: drop-shadow(0 0 20px rgba(56,248,236,0.3));
-  max-height: 220px;
+  max-height: 280px;
+  max-width: 90%;
   object-fit: contain;
   position: relative;
   z-index: 1;
@@ -554,16 +576,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(56,248,236,0.15), transparent 70%);
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(56,248,236,0.2), transparent 70%);
   pointer-events: none;
 }
 .smithy-label {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
   margin-top: 1rem;
@@ -611,8 +633,8 @@
 .portfolio-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  gap: 4rem;
+  margin-bottom: 5rem;
   align-items: start;
 }
 .portfolio-video {
@@ -621,7 +643,7 @@
   padding-bottom: 56.25%;
   border-radius: 4px;
   overflow: hidden;
-  background: var(--bg-section);
+  background: #1a1e26;
 }
 .portfolio-video iframe {
   position: absolute;
@@ -661,6 +683,7 @@
 .video-grid .portfolio-video { padding-bottom: 177.78%; }
 .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 1.5rem; }
 .photo-grid-item { position: relative; overflow: hidden; aspect-ratio: 1; border-radius: 2px; cursor: pointer; }
+.photo-grid-item a { display: block; width: 100%; height: 100%; }
 .photo-grid-item img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
 .photo-grid-item:hover img { transform: scale(1.05); }
 

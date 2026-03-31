@@ -194,22 +194,24 @@ export default function Home() {
             <p style={{ color: "var(--text-muted)", fontStyle: "italic", fontSize: "0.9rem", marginBottom: "1.5rem" }}>Not every story fits a single frame. SeriesFest Denver, the American Film Market, Boulder Startup Week, Colorado Startup Week, Pitch Boulder — if it's ambitious, interesting, and worth covering, a StorySmith belongs there. More coverage documented on LinkedIn.</p>
             <div className="photo-grid">
               {[
-                { src: `${CDN}/pebble-beach_3258d527.jpg`, alt: "Pebble Beach Concours d'Elegance — Shelby Cobra 427 SC Roadster on the lawn", label: "CONCOURS D'ELEGANCE — PEBBLE BEACH" },
-                { src: `${CDN}/american-film-market_75ebac43.jpg`, alt: "American Film Market — independent film industry event coverage", label: "AMERICAN FILM MARKET" },
-                { src: `${CDN}/pitchboulder-image_5a2ff2a6.jpg`, alt: "PitchBoulder — weekly startup pitch event in Boulder, Colorado", label: "PITCHBOULDER — BOULDER, CO" },
-                { src: `${CDN}/outside-festival_96557afb.jpg`, alt: "Outside Days — Outside Magazine outdoor adventure and lifestyle festival", label: "OUTSIDE DAYS — OUTSIDE MAGAZINE FESTIVAL" },
-                { src: `${CDN}/seriesfest_abf49c68.jpg`, alt: "SeriesFest Denver — independent television festival", label: "SERIESFEST DENVER" },
-                { src: `${CDN}/fashion-in-focus_ac10b663.jpg`, alt: "SeriesFest Fashion in Focus — costume design and television craft celebration", label: "FASHION IN FOCUS, DENVER" },
+                { src: `${CDN}/pebble-beach_3258d527.jpg`, alt: "Pebble Beach Concours d'Elegance — Shelby Cobra 427 SC Roadster on the lawn", label: "CONCOURS D'ELEGANCE — PEBBLE BEACH", url: "https://www.pebblebeachconcours.net/" },
+                { src: `${CDN}/american-film-market_75ebac43.jpg`, alt: "American Film Market — independent film industry event coverage", label: "AMERICAN FILM MARKET", url: "https://americanfilmmarket.com/" },
+                { src: `${CDN}/pitchboulder-image_5a2ff2a6.jpg`, alt: "PitchBoulder — weekly startup pitch event in Boulder, Colorado", label: "PITCHBOULDER — BOULDER, CO", url: "https://pitchboulder.co/" },
+                { src: `${CDN}/outside-festival_96557afb.jpg`, alt: "Outsized — Outside Magazine outdoor adventure and lifestyle festival", label: "OUTSIZED — OUTSIDE MAGAZINE FESTIVAL", url: "https://www.outsized.com/" },
+                { src: `${CDN}/seriesfest_abf49c68.jpg`, alt: "SeriesFest Denver — independent television festival", label: "SERIESFEST DENVER", url: "https://seriesfest.com/" },
+                { src: `${CDN}/fashion-in-focus_ac10b663.jpg`, alt: "Fashion Focus Denver — costume design and television craft celebration", label: "FASHION FOCUS DENVER", url: "https://seriesfest.com/fashion-focus" },
               ].map((img) => (
                 <div className="photo-grid-item" key={img.label}>
-                  <img src={img.src} alt={img.alt} />
-                  <div className="photo-grid-label">{img.label}</div>
+                  <a href={img.url} target="_blank" rel="noopener noreferrer">
+                    <img src={img.src} alt={img.alt} />
+                    <div className="photo-grid-label">{img.label}</div>
+                  </a>
                 </div>
               ))}
             </div>
             <div className="follow-cta">
               <p>More coverage documented on LinkedIn. Follow along.</p>
-              <a href="https://www.linkedin.com/in/sindbad-horizon-b19b4a264" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ width: "fit-content" }} aria-label="View more coverage on LinkedIn (opens in new tab)">
+              <a href="https://www.linkedin.com/in/sindbad-horizon-b19b4a264" target="_blank" rel="noopener noreferrer" className="btn btn-solid-turquoise" style={{ width: "fit-content" }} aria-label="View more coverage on LinkedIn (opens in new tab)">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
                 Follow on LinkedIn
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 10L10 2M10 2H4M10 2v6" /></svg>
