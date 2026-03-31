@@ -20,15 +20,14 @@ interface EventData {
 }
 
 const events: EventData[] = [
-  { title: "PitchBoulder", time: "Weekly — Wednesdays", location: "Boulder, CO", url: "https://pitchboulder.com", linkLabel: "PITCHBOULDER.COM", description: "The weekly startup pitch event where founders present to a room of investors, operators, and advisors. Embedded coverage since 2022." },
+  { title: "PitchBoulder", time: "Weekly — Wednesdays", location: "Boulder, CO", url: "https://pitchboulder.co/", linkLabel: "PITCHBOULDER.CO", description: "The weekly startup pitch event where founders present to a room of investors, operators, and advisors. Embedded coverage since 2022." },
   { title: "SeriesFest Denver", time: "Annual — June", location: "Denver, CO", url: "https://seriesfest.com", linkLabel: "SERIESFEST.COM", description: "Independent television festival celebrating the art of episodic storytelling. Red carpet, panels, screenings, and the people behind the shows." },
   { title: "Boulder Startup Week", time: "Annual — May", location: "Boulder, CO", url: "https://boulderstartupweek.com", linkLabel: "BOULDERSTARTUPWEEK.COM" },
   { title: "Colorado Startup Week", time: "Annual — September", location: "Statewide, CO", url: "https://coloradostartupweek.com", linkLabel: "COLORADOSTARTUPWEEK.COM" },
   { title: "American Film Market", time: "Annual — February", location: "Las Vegas, NV", url: "https://americanfilmmarket.com", linkLabel: "AMERICANFILMMARKET.COM", description: "The global marketplace for independent film. Where deals get made, distribution gets negotiated, and the business side of cinema comes into focus." },
-  { title: "NOCOVA", time: "Recurring", location: "Northern Colorado", url: "https://nocova.org", linkLabel: "NOCOVA.ORG" },
+  { title: "NOCOVA", time: "Recurring", location: "Northern Colorado", url: "https://www.meme.ngo/nocova", linkLabel: "MEME.NGO/NOCOVA" },
   { title: "Makeshift Film Group", time: "Monthly", location: "Boulder, CO", url: "https://www.makeshiftfilmgroup.com", linkLabel: "MAKESHIFTFILMGROUP.COM" },
-  { title: "SeriesFest: Fashion in Focus", time: "Annual", location: "Denver, CO", url: "https://seriesfest.com", linkLabel: "SERIESFEST.COM" },
-  { title: "Outside Days", time: "Annual", location: "Boulder, CO", url: "https://outsidedays.com", linkLabel: "OUTSIDEDAYS.COM" },
+  { title: "Outside Days", time: "Annual", location: "Boulder, CO", url: "https://outsidedays.outsideonline.com/", linkLabel: "OUTSIDEDAYS.OUTSIDEONLINE.COM" },
   { title: "Golden Startup Coffee", time: "Monthly", location: "Golden, CO", url: "#", linkLabel: "DETAILS COMING" },
 ];
 

@@ -50,25 +50,39 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <>
-      {/* River Line SVG */}
+      {/* River Line SVG — weaving path effect */}
       <div className="river-line-wrapper" aria-hidden="true">
-        <svg viewBox="0 0 100 4000" preserveAspectRatio="none" fill="none">
+        <svg viewBox="0 0 200 6000" preserveAspectRatio="none" fill="none">
           <path
-            d="M 50 0 C 30 200, 70 400, 45 600 C 20 800, 75 1000, 55 1200 C 35 1400, 65 1600, 40 1800 C 15 2000, 80 2200, 50 2400 C 20 2600, 70 2800, 45 3000 C 25 3200, 60 3400, 50 3600 C 40 3800, 55 3900, 50 4000"
+            d="M 160 0 C 140 100, 60 200, 80 400 C 100 600, 40 800, 60 1000 C 80 1200, 150 1400, 120 1600 C 90 1800, 40 2000, 70 2200 C 100 2400, 160 2600, 130 2800 C 100 3000, 50 3200, 80 3400 C 110 3600, 150 3800, 120 4000 C 90 4200, 50 4400, 80 4600 C 110 4800, 140 5000, 100 5200 C 60 5400, 90 5700, 100 6000"
             stroke="url(#riverGradient)"
-            strokeWidth="0.3"
+            strokeWidth="0.6"
             strokeLinecap="round"
             opacity="1"
-            pathLength="1"
-            strokeDasharray="1 1"
-            strokeDashoffset="0"
+          />
+          {/* Secondary thinner path for depth */}
+          <path
+            d="M 155 0 C 135 120, 55 220, 75 420 C 95 620, 35 820, 55 1020 C 75 1220, 145 1420, 115 1620 C 85 1820, 35 2020, 65 2220 C 95 2420, 155 2620, 125 2820 C 95 3020, 45 3220, 75 3420 C 105 3620, 145 3820, 115 4020 C 85 4220, 45 4420, 75 4620 C 105 4820, 135 5020, 95 5220 C 55 5420, 85 5720, 95 6000"
+            stroke="url(#riverGradient2)"
+            strokeWidth="0.25"
+            strokeLinecap="round"
+            opacity="0.5"
           />
           <defs>
             <linearGradient id="riverGradient" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="#38F8EC" stopOpacity="0" />
-              <stop offset="5%" stopColor="#38F8EC" stopOpacity="0.25" />
-              <stop offset="50%" stopColor="#38F8EC" stopOpacity="0.15" />
-              <stop offset="95%" stopColor="#38F8EC" stopOpacity="0.25" />
+              <stop offset="3%" stopColor="#38F8EC" stopOpacity="0.35" />
+              <stop offset="20%" stopColor="#38F8EC" stopOpacity="0.2" />
+              <stop offset="50%" stopColor="#38F8EC" stopOpacity="0.3" />
+              <stop offset="80%" stopColor="#38F8EC" stopOpacity="0.2" />
+              <stop offset="97%" stopColor="#38F8EC" stopOpacity="0.35" />
+              <stop offset="100%" stopColor="#38F8EC" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="riverGradient2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#38F8EC" stopOpacity="0" />
+              <stop offset="10%" stopColor="#38F8EC" stopOpacity="0.15" />
+              <stop offset="50%" stopColor="#38F8EC" stopOpacity="0.1" />
+              <stop offset="90%" stopColor="#38F8EC" stopOpacity="0.15" />
               <stop offset="100%" stopColor="#38F8EC" stopOpacity="0" />
             </linearGradient>
           </defs>
@@ -156,8 +170,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
           <div className="footer-col">
             <h4>Contact</h4>
-            <a href="mailto:sindbad@advstmedia.com" aria-label="Email Sindbad at sindbad@advstmedia.com">sindbad@advstmedia.com</a>
-            <a href="https://www.linkedin.com/in/sindbad-horizon-b19b4a264" target="_blank" rel="noopener noreferrer" aria-label="Sindbad Horizon's LinkedIn profile (opens in new tab)">LinkedIn</a>
+            <div className="footer-blue-effect">
+              <span className="footer-email-label">Email</span>
+              <a href="mailto:sindbad@advstmedia.com" aria-label="Email Sindbad at sindbad@advstmedia.com">sindbad@advstmedia.com</a>
+            </div>
+            <a href="https://www.linkedin.com/in/sindbad-horizon-b19b4a264" target="_blank" rel="noopener noreferrer" aria-label="Sindbad Horizon's LinkedIn profile (opens in new tab)" style={{ marginTop: '0.75rem', display: 'block' }}>LinkedIn</a>
           </div>
         </div>
         <div className="footer-bottom">

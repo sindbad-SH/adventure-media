@@ -197,9 +197,9 @@ export default function Home() {
                 { src: `${CDN}/pebble-beach_3258d527.jpg`, alt: "Pebble Beach Concours d'Elegance — Shelby Cobra 427 SC Roadster on the lawn", label: "CONCOURS D'ELEGANCE — PEBBLE BEACH", url: "https://www.pebblebeachconcours.net/" },
                 { src: `${CDN}/american-film-market_75ebac43.jpg`, alt: "American Film Market — independent film industry event coverage", label: "AMERICAN FILM MARKET", url: "https://americanfilmmarket.com/" },
                 { src: `${CDN}/pitchboulder-image_5a2ff2a6.jpg`, alt: "PitchBoulder — weekly startup pitch event in Boulder, Colorado", label: "PITCHBOULDER — BOULDER, CO", url: "https://pitchboulder.co/" },
-                { src: `${CDN}/outside-festival_96557afb.jpg`, alt: "Outsized — Outside Magazine outdoor adventure and lifestyle festival", label: "OUTSIZED — OUTSIDE MAGAZINE FESTIVAL", url: "https://www.outsized.com/" },
+                { src: `${CDN}/outside-festival_96557afb.jpg`, alt: "Outside Days — Outside Magazine outdoor adventure and lifestyle festival", label: "OUTSIDE DAYS", url: "https://outsidedays.outsideonline.com/" },
                 { src: `${CDN}/seriesfest_abf49c68.jpg`, alt: "SeriesFest Denver — independent television festival", label: "SERIESFEST DENVER", url: "https://seriesfest.com/" },
-                { src: `${CDN}/fashion-in-focus_ac10b663.jpg`, alt: "Fashion Focus Denver — costume design and television craft celebration", label: "FASHION FOCUS DENVER", url: "https://seriesfest.com/fashion-focus" },
+                { src: `${CDN}/fashion-in-focus_ac10b663.jpg`, alt: "Fashion in Focus — costume design and television craft celebration", label: "FASHION IN FOCUS", url: "https://seriesfest.com/" },
               ].map((img) => (
                 <div className="photo-grid-item" key={img.label}>
                   <a href={img.url} target="_blank" rel="noopener noreferrer">
@@ -238,7 +238,7 @@ export default function Home() {
             <div className="service-card fade-in">
               <div className="service-card-glow"></div>
               <div className="service-card-illustration">
-                <img src={`${CDN}/story-scout_f3c83c82.png`} alt="Faceless illustrated character extending a microphone toward another person" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX/story-scout-new-VBQUTT7amSbYMGt9ACdRog.webp" alt="Faceless illustrated character extending a microphone toward another person" />
               </div>
               <div className="subsection-num">01</div>
               <h3>Story Scout</h3>
