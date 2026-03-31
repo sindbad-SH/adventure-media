@@ -189,13 +189,16 @@
 .river-line-wrapper svg {
   position: absolute;
   top: 0;
-  left: 50px;
-  width: 60px;
+  left: 0;
+  width: 100%;
   height: 100%;
 }
 .river-line-wrapper svg path {
-  stroke-dasharray: 12 8;
-  animation: riverFlow 3s linear infinite;
+  stroke-dasharray: none;
+}
+.river-line-wrapper svg path:first-child {
+  stroke-dasharray: 14 6;
+  animation: riverFlow 4s linear infinite;
 }
 @keyframes riverFlow {
   0% { stroke-dashoffset: 0; }
@@ -344,7 +347,7 @@
     display: none;
   }
   .more-dropdown.open .dropdown-menu { display: block; }
-  .river-line-wrapper { display: none; }
+  .river-line-wrapper { opacity: 0.5; }
 }
 
 /* ===== HERO ===== */
@@ -409,10 +412,10 @@
   align-items: center;
 }
 .hero-visual img {
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
-  opacity: 0.5;
-  filter: brightness(1.6) drop-shadow(0 0 60px rgba(56,248,236,0.45)) drop-shadow(0 0 120px rgba(56,248,236,0.2));
+  opacity: 1;
+  filter: drop-shadow(0 0 40px rgba(56,248,236,0.5)) drop-shadow(0 0 90px rgba(56,248,236,0.25));
 }
 .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 

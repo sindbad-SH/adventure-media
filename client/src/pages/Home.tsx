@@ -74,7 +74,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <img src={`${CDN}/logo-hero_21a95cfa.webp`} alt="ASM logo mark — mountain and river S design" />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX/ASM_Logo_Mark_SkyandLuminescentcyan_c4754089.webp" alt="ASM logo mark — mountain and river S design" />
           </div>
         </div>
       </section>

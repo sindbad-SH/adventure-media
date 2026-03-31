@@ -28,7 +28,7 @@ const events: EventData[] = [
   { title: "NOCOVA", time: "Recurring", location: "Northern Colorado", url: "https://www.meme.ngo/nocova", linkLabel: "MEME.NGO/NOCOVA" },
   { title: "Makeshift Film Group", time: "Monthly", location: "Boulder, CO", url: "https://www.makeshiftfilmgroup.com", linkLabel: "MAKESHIFTFILMGROUP.COM" },
   { title: "Outside Days", time: "Annual", location: "Boulder, CO", url: "https://outsidedays.outsideonline.com/", linkLabel: "OUTSIDEDAYS.OUTSIDEONLINE.COM" },
-  { title: "Golden Startup Coffee", time: "Monthly", location: "Golden, CO", url: "#", linkLabel: "DETAILS COMING" },
+  { title: "Golden Startup Coffee", time: "Monthly", location: "Golden, CO", url: "https://www.connectsworkspace.com/golden-startup-coffee", linkLabel: "CONNECTSWORKSPACE.COM" },
 ];
 
 export default function MapPage() {
