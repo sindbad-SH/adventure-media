@@ -3,6 +3,8 @@ import { Link } from "wouter";
 
 const CDN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX";
 
+const PAGE_TITLE = "Adventure Storytelling Media | Boulder, CO";
+
 function ScrollIndicator() {
   return (
     <div className="scroll-indicator" aria-hidden="true">
@@ -33,6 +35,10 @@ function SubsectionHeader({ num }: { num: string }) {
 }
 
 export default function Home() {
+  useEffect(() => {
+    document.title = PAGE_TITLE;
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("visible"); }),
