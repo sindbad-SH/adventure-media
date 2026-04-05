@@ -596,6 +596,34 @@
   z-index: 1;
 }
 
+/* Remove white backgrounds from all illustrated images */
+.smithy-container,
+.service-card-illustration {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.smithy-container {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 1rem 1rem 0.5rem;
+}
+
+/* Forge the Saga five-stage list in What I Do tile */
+.forge-stages-list {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #38F8EC;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
 /* FIX #3 — Sindbad photo with angled corner cuts */
 .sindbad-photo {
   width: 100%;
@@ -752,9 +780,9 @@
   color: var(--turquoise);
   margin-bottom: 2.5rem;
 }
-.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
 .service-card {
-  background: var(--bg-card);
+  background: rgba(26,30,38,0.6);
   border: 1px solid var(--asm-border);
   border-radius: 12px;
   padding: 2rem 1.5rem;

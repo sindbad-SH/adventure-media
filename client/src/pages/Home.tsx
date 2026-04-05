@@ -98,13 +98,13 @@ export default function Home() {
               <h2>The StorySmith</h2>
               <p>I'm Sindbad Horizon — StorySmith and founder of Adventure Storytelling Media. I cover startup pitch events, luxury automotive showcases, independent film festivals, and anywhere else ambitious people are building something worth capturing.</p>
               <p>The most powerful stories aren't just told — they are tested. I build the asset, measure its effectiveness, and feed those insights back into the next iteration. Research → Creation → Refinement. I don't just capture your story — I help you find out if it lands.</p>
-              <Link href="/forge-the-saga" className="btn-link">Curious about the process? Learn about Forge the Saga →</Link>
+              <Link href="/forge-the-saga" className="btn-link">Ready to forge your story? See Forge the Saga →</Link>
               <p className="italic-text" style={{ marginTop: "1.5rem" }}>Boulder is home base. The world is the territory.</p>
             </div>
             <div className="about-visual fade-in">
               <div className="smithy-container">
-                <img src={`${CDN}/smithy-scene_8d9f9aa6.png`} alt="2D illustrated smithy scene — faceless figure forging at an anvil with hammer, teal and charcoal palette" />
-                <div className="smithy-label">FORGING STORIES</div>
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX/forging-saga-blacksmith-hipm7RbCBGRd5BgZnm6kbj.webp" alt="Faceless gray-toned figure at a stone forge with turquoise fire and circuit-etched anvil — techno-adventure blacksmith" />
+                <div className="smithy-label">FORGING THE SAGA</div>
               </div>
               <div className="sindbad-photo-wrapper">
                 <img src={`${CDN}/sindbad-photo_dbfa7430.webp`} alt="Sindbad Horizon — StorySmith and founder of Adventure Storytelling Media" className="sindbad-photo" />
@@ -223,7 +223,7 @@ export default function Home() {
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 10L10 2M10 2H4M10 2v6" /></svg>
               </a>
             </div>
-            <p className="story-test-cta">Want to know if your story lands? <Link href="/forge-the-saga" className="btn-link">Forge Your Saga →</Link></p>
+            <p className="story-test-cta">Ready to forge yours? <Link href="/forge-the-saga" className="btn-link">See Forge the Saga →</Link></p>
           </div>
         </div>
       </section>
@@ -244,7 +244,7 @@ export default function Home() {
             <div className="service-card fade-in">
               <div className="service-card-glow"></div>
               <div className="service-card-illustration">
-                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX/story-scout-new-VBQUTT7amSbYMGt9ACdRog.webp" alt="Faceless illustrated character extending a microphone toward another person" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX/story-scout-tile-new-DtMdTfE6rzpHg4eL74daRj.webp" alt="Faceless gray-toned figure scouting a vast natural landscape from a cliff edge with tech-enhanced binoculars and drone" />
               </div>
               <div className="subsection-num">01</div>
               <h3>Story Scout</h3>
@@ -254,11 +254,12 @@ export default function Home() {
             <div className="service-card fade-in">
               <div className="service-card-glow"></div>
               <div className="service-card-illustration">
-                <img src={`${CDN}/story-forge_347ed23f.png`} alt="Faceless illustrated figure at a workbench surrounded by floating tools" />
+                <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663488690227/895rg4FQazWBsi7DRhtfWX/forging-saga-blacksmith-hipm7RbCBGRd5BgZnm6kbj.webp" alt="Faceless gray-toned figure at a stone forge — techno-adventure blacksmith with turquoise fire" />
               </div>
               <div className="subsection-num">02</div>
               <h3>Forge the Saga</h3>
-              <p>Most businesses don't have a marketing problem. They have a story problem. Forge the Saga is a five-stage market clarity engagement — from raw research to a tested, validated story strategy. Find out what works before you spend real money finding out what doesn't.</p>
+              <p>Most businesses don't have a marketing problem. They have a story problem. Forge the Saga is a five-stage market clarity engagement — Story Scouting, Story Mapping, Story Forging, Story Testing, and Story Assessing — run as a complete loop from raw research to validated story strategy. Find out what works before you spend real money finding out what doesn't.</p>
+              <div className="forge-stages-list">Story Scouting · Story Mapping · Story Forging · Story Testing · Story Assessing</div>
               <Link href="/forge-the-saga" className="btn-link" aria-label="Forge Your Saga">Forge Your Saga</Link>
             </div>
           </div>
