@@ -129,7 +129,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 </svg>
               </button>
               <div className="dropdown-menu">
-                <Link href="/story-test" onClick={handleNavClick}>The Story Test</Link>
+                <Link href="/forge-the-saga" onClick={handleNavClick}>Forge the Saga</Link>
                 <Link href="/field-notes" onClick={handleNavClick}>Field Notes</Link>
                 <Link href="/arsenal" onClick={handleNavClick}>The Arsenal</Link>
                 <Link href="/map" onClick={handleNavClick}>The Map</Link>
@@ -156,7 +156,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             {isHome ? <a href="#field">The Field</a> : <Link href="/#field">The Field</Link>}
             {isHome ? <a href="#services">What I Do</a> : <Link href="/#services">What I Do</Link>}
             {isHome ? <a href="#contact">Connect</a> : <Link href="/#contact">Connect</Link>}
-            <Link href="/story-test">The Story Test</Link>
+            <Link href="/forge-the-saga">Forge the Saga</Link>
           </div>
           <div className="footer-col">
             <h4>Explore</h4>
@@ -187,8 +187,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       </footer>
 
       {/* Floating Story Test Button */}
-      <Link href="/story-test" className="floating-btn">
-        The Story Test{" "}
+      <Link href="/forge-the-saga" className="floating-btn">
+        Forge the Saga{" "}
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M2 7h10M8 3l4 4-4 4" />
         </svg>

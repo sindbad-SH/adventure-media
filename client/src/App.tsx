@@ -5,7 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import StoryTest from "./pages/StoryTest";
+import ForgeTheSaga from "./pages/ForgeTheSaga";
 import FieldNotes from "./pages/FieldNotes";
 import Arsenal from "./pages/Arsenal";
 import MapPage from "./pages/MapPage";
@@ -16,7 +16,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/story-test" component={StoryTest} />
+      <Route path="/forge-the-saga" component={ForgeTheSaga} />
       <Route path="/field-notes" component={FieldNotes} />
       <Route path="/arsenal" component={Arsenal} />
       <Route path="/map" component={MapPage} />

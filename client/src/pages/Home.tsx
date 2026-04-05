@@ -98,7 +98,7 @@ export default function Home() {
               <h2>The StorySmith</h2>
               <p>I'm Sindbad Horizon — StorySmith and founder of Adventure Storytelling Media. I cover startup pitch events, luxury automotive showcases, independent film festivals, and anywhere else ambitious people are building something worth capturing.</p>
               <p>The most powerful stories aren't just told — they are tested. I build the asset, measure its effectiveness, and feed those insights back into the next iteration. Research → Creation → Refinement. I don't just capture your story — I help you find out if it lands.</p>
-              <Link href="/story-test" className="btn-link">Curious about the research side? Learn about The Story Test →</Link>
+              <Link href="/forge-the-saga" className="btn-link">Curious about the process? Learn about Forge the Saga →</Link>
               <p className="italic-text" style={{ marginTop: "1.5rem" }}>Boulder is home base. The world is the territory.</p>
             </div>
             <div className="about-visual fade-in">
@@ -223,7 +223,7 @@ export default function Home() {
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 10L10 2M10 2H4M10 2v6" /></svg>
               </a>
             </div>
-            <p className="story-test-cta">Want to know if your story lands? <Link href="/story-test" className="btn-link">See The Story Test →</Link></p>
+            <p className="story-test-cta">Want to know if your story lands? <Link href="/forge-the-saga" className="btn-link">Forge Your Saga →</Link></p>
           </div>
         </div>
       </section>
@@ -254,22 +254,12 @@ export default function Home() {
             <div className="service-card fade-in">
               <div className="service-card-glow"></div>
               <div className="service-card-illustration">
-                <img src={`${CDN}/story-test-icon_73e1b604.png`} alt="Faceless illustrated character facilitating a group discussion" />
-              </div>
-              <div className="subsection-num">02</div>
-              <h3>Story Test</h3>
-              <p>Most founders believe their story is clear. Most audiences disagree. The Story Test uses AI-powered audience research to show you exactly who's receptive to your pitch, who isn't, and what specific objections are standing between you and a yes — before you spend another dollar finding out the hard way.</p>
-              <Link href="/story-test" className="btn-link" aria-label="Learn More — Story Test">Learn More</Link>
-            </div>
-            <div className="service-card fade-in">
-              <div className="service-card-glow"></div>
-              <div className="service-card-illustration">
                 <img src={`${CDN}/story-forge_347ed23f.png`} alt="Faceless illustrated figure at a workbench surrounded by floating tools" />
               </div>
-              <div className="subsection-num">03</div>
-              <h3>Story Forge</h3>
-              <p>Have something in mind that doesn't fit a box? Good. Let's talk.</p>
-              <Link href="/connect" className="btn-link" aria-label="Get In Touch — Story Forge">Get In Touch</Link>
+              <div className="subsection-num">02</div>
+              <h3>Forge the Saga</h3>
+              <p>Most businesses don't have a marketing problem. They have a story problem. Forge the Saga is a five-stage market clarity engagement — from raw research to a tested, validated story strategy. Find out what works before you spend real money finding out what doesn't.</p>
+              <Link href="/forge-the-saga" className="btn-link" aria-label="Forge Your Saga">Forge Your Saga</Link>
             </div>
           </div>
         </div>
