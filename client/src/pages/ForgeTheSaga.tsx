@@ -32,8 +32,8 @@ const stages = [
     price: "$1,500–$2,500",
     desc: "Raw market intelligence. Who your audience actually is, what language they use, what competitors are missing. You receive Field Notes — a plain-language synthesis of everything discovered before a single word of strategy is written.",
     bestFor: "You have a product or offer but don't yet know who your real buyer is or how to talk to them.",
-    icon: `${CDN}/stage-01-scouting_035302a0.png`,
-    iconAlt: "Faceless illustrated figure with binoculars scouting the landscape",
+    icon: `${CDN}/stage-scouting-new-4aPVaAYTSZdtXCfp99wUJm.webp`,
+    iconAlt: "Faceless illustrated figure with binoculars scouting the landscape from an elevated outcrop",
   },
   {
     num: "02",
@@ -41,8 +41,8 @@ const stages = [
     price: "$1,500–$2,500",
     desc: "The intelligence gets shaped into narrative strategy. A story structure — who the audience is, what arc moves them, and what that looks like as a piece of content. The blueprint that drives everything built next.",
     bestFor: "You have research but need someone to shape it into a clear strategic direction.",
-    icon: `${CDN}/stage-02-mapping_29c433f7.png`,
-    iconAlt: "Faceless illustrated figure with a compass and map plotting a course",
+    icon: `${CDN}/stage-mapping-new-B3qMqxd59urRXcvr3Ebvuv.webp`,
+    iconAlt: "Faceless illustrated figure leaning over a holographic map with teal light tracing routes",
   },
   {
     num: "03",
@@ -50,8 +50,8 @@ const stages = [
     price: "$2,500–$5,000",
     desc: "The strategy becomes something real. A prototype — usually a short video — built to be tested, not published. Real enough to get honest reactions from a real audience. Scales with format complexity.",
     bestFor: "You have a strategy and need a prototype built before committing to full production costs.",
-    icon: `${CDN}/stage-03-forging_bf083c65.png`,
-    iconAlt: "Faceless illustrated figure forging at an anvil with hammer and sparks",
+    icon: `${CDN}/stage-forging-new-3dKoAy6RSwhEehVygW7hrY.webp`,
+    iconAlt: "Faceless illustrated figure forging at an anvil with teal sparks and fire",
   },
   {
     num: "04",
@@ -59,8 +59,8 @@ const stages = [
     price: "$1,500–$2,500 + panel cost",
     desc: "The prototype meets an audience — real people, AI audience panels, or both. General or specialized: industry-specific, demographically targeted, whatever your market requires. Panel cost is passed through at cost.",
     bestFor: "You have an asset ready and want real data before committing to full distribution spend.",
-    icon: `${CDN}/stage-04-testing_9383f11e.png`,
-    iconAlt: "Faceless illustrated figure presenting to a group of seated audience members",
+    icon: `${CDN}/stage-testing-new-7y83P5KNMhKjXQdFfbX8pt.webp`,
+    iconAlt: "Faceless illustrated figure presenting to a group with a teal holographic projection",
   },
   {
     num: "05",
@@ -68,23 +68,8 @@ const stages = [
     price: "$750–$1,500",
     desc: "We sit with what came back. What held, what didn't, what it means, and what to do next. Clear findings and a concrete recommendation — refine and retest, or proceed to full production.",
     bestFor: "You have data or audience feedback and need someone to decode it and point the way forward.",
-    icon: `${CDN}/stage-05-assessing_99e7a8f9.png`,
-    iconAlt: "Faceless illustrated figure reviewing documents and data charts",
-  },
-];
-
-const whoCards = [
-  {
-    title: "The Pitcher",
-    desc: "Founders preparing for investor pitches, demo days, or accelerator applications who need to know their story connects before they walk into the room.",
-  },
-  {
-    title: "The Strategist",
-    desc: "Marketing leads and brand teams launching campaigns, repositioning products, or entering new markets who need audience validation before committing budget.",
-  },
-  {
-    title: "The Skeptic",
-    desc: "Leaders who suspect their messaging isn't landing but can't pinpoint why. The process gives them the evidence to act on instinct.",
+    icon: `${CDN}/stage-assessing-new-Z8zHEbMi6YXmrZkosNULGJ.webp`,
+    iconAlt: "Faceless illustrated figure reviewing documents and data charts under teal light",
   },
 ];
 
@@ -126,11 +111,18 @@ export default function ForgeTheSaga() {
               The gap between what you think you're saying and what people actually hear is where deals die, campaigns stall, and launches underperform. Forge the Saga closes that gap before it costs you.
             </p>
           </div>
+          {/* CORRECTION 2 — New hero image: cinematic faceless figure at edge of vast landscape */}
           <div style={{ marginTop: "2rem" }}>
             <img
-              src={`${CDN}/stage-03-forging_bf083c65.png`}
-              alt="Faceless illustrated figure forging at an anvil — teal and charcoal palette"
-              style={{ maxHeight: "200px", width: "auto", filter: "drop-shadow(0 0 30px rgba(56,248,236,0.3))" }}
+              src={`${CDN}/forge-hero-new-gfHK35RLRcCzgKQW9QFL2F.webp`}
+              alt="Faceless illustrated figure standing at the edge of a vast unmapped landscape — teal glowing tools, dark atmospheric background"
+              style={{
+                maxWidth: "100%",
+                width: "720px",
+                height: "auto",
+                borderRadius: "8px",
+                filter: "drop-shadow(0 0 30px rgba(56,248,236,0.3))",
+              }}
             />
           </div>
         </div>
@@ -139,22 +131,47 @@ export default function ForgeTheSaga() {
       <ScrollIndicator />
       <DecoLine />
 
-      {/* Section 2 — The Full Engagement */}
+      {/* Section 2 — The Full Engagement — CORRECTION 4: Enhanced price block */}
       <section className="asm-section section-bg-lighter">
         <div className="asm-container">
           <div className="fade-in" style={{ textAlign: "center", maxWidth: "720px", margin: "0 auto" }}>
             <div className="section-label" style={{ marginBottom: "1rem" }}>FULL ENGAGEMENT — BEST VALUE</div>
-            <h2 style={{ marginBottom: "0.5rem" }}>The Full Saga</h2>
+            <h2 style={{ marginBottom: "1.5rem" }}>The Full Saga</h2>
+
+            {/* Enhanced price container with teal accent and visible panel */}
             <div style={{
-              fontFamily: "'Barlow Condensed', sans-serif",
-              fontWeight: 700,
-              fontSize: "1.5rem",
-              color: "#38F8EC",
-              letterSpacing: "0.05em",
-              marginBottom: "1.5rem",
+              background: "rgba(56,248,236,0.04)",
+              border: "1px solid rgba(56,248,236,0.2)",
+              borderLeft: "4px solid #38F8EC",
+              borderRadius: "8px",
+              padding: "2rem 2.5rem",
+              marginBottom: "2rem",
+              position: "relative" as const,
             }}>
-              $6,500–$9,500
+              <div style={{
+                fontFamily: "'Barlow Condensed', sans-serif",
+                fontWeight: 700,
+                fontSize: "clamp(2rem, 4vw, 2.8rem)",
+                color: "#38F8EC",
+                letterSpacing: "0.05em",
+                lineHeight: 1.2,
+                textShadow: "0 0 20px rgba(56,248,236,0.3)",
+              }}>
+                $6,500–$9,500
+              </div>
+              <div style={{
+                fontFamily: "'Barlow Condensed', sans-serif",
+                fontWeight: 400,
+                fontSize: "0.85rem",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase" as const,
+                color: "rgba(127,252,244,0.6)",
+                marginTop: "0.5rem",
+              }}>
+                Complete five-stage engagement
+              </div>
             </div>
+
             <p style={{ color: "var(--text-muted)", lineHeight: 1.8, marginBottom: "2rem" }}>
               All five stages run as a complete loop. The research shapes the strategy. The strategy shapes what gets built. What gets built gets tested. What gets tested feeds the next round. Run the full loop and you get a story pressure-tested before it costs you real money to tell it at scale.
             </p>
@@ -169,7 +186,7 @@ export default function ForgeTheSaga() {
       <ScrollIndicator />
       <DecoLine />
 
-      {/* Section 3 — The Five Stages */}
+      {/* Section 3 — The Five Stages (images updated via CORRECTION 3) */}
       <section className="asm-section">
         <div className="asm-container">
           <div className="fade-in" style={{ textAlign: "center", marginBottom: "3rem" }}>
@@ -224,31 +241,12 @@ export default function ForgeTheSaga() {
         </div>
       </section>
 
-      <ScrollIndicator />
-      <DecoLine />
-
-      {/* Section 4 — Who This Is For */}
-      <section className="asm-section section-bg-lighter">
-        <div className="asm-container">
-          <div className="fade-in" style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-            <h2>Who Forges a Saga</h2>
-          </div>
-          <div className="who-cards">
-            {whoCards.map((card, i) => (
-              <div className={`who-card fade-in st-stagger-${i + 1}`} key={card.title}>
-                <div className="subsection-num" style={{ marginBottom: "0.75rem" }}>{String(i + 1).padStart(2, "0")}</div>
-                <h3 style={{ fontSize: "1.25rem", marginBottom: "0.75rem" }}>{card.title}</h3>
-                <p style={{ color: "var(--text-muted)", lineHeight: 1.7 }}>{card.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* CORRECTION 1 — "Who Forges a Saga" section DELETED entirely */}
 
       <ScrollIndicator />
       <DecoLine />
 
-      {/* Section 5 — CTA */}
+      {/* CTA Section */}
       <section className="asm-section">
         <div className="asm-container">
           <div className="cta-box fade-in" style={{ textAlign: "center", maxWidth: "640px", margin: "0 auto" }}>
